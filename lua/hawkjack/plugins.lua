@@ -64,6 +64,14 @@ use "sainnhe/everforest"
 	use "L3MON4D3/LuaSnip" --snippet engine
 	use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
+	-- LSP
+	use "kabouzeid/nvim-lspinstall"
+    use "neovim/nvim-lspconfig" -- enable LSP
+	use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+	use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+
+
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
