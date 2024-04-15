@@ -3,6 +3,6 @@ if not status_ok then
   return
 end
 
-require "user.lsp.mason"
-require("user.lsp.handlers").setup()
-require "user.lsp.null-ls"
+require "hawkjack.lsp.mason"
+require("hawkjack.lsp.handlers").setup()
+require "hawkjack.lsp.null-ls"
