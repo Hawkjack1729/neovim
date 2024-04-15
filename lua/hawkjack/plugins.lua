@@ -56,6 +56,7 @@ use "sainnhe/everforest"
 	use "hrsh7th/cmp-buffer" -- buffer completions
 	use "hrsh7th/cmp-path" -- path completions
 	use "saadparwaiz1/cmp_luasnip" -- snippet completions
+use "hrsh7th/cmp-cmdline" -- cmdline completions
 	use "hrsh7th/cmp-nvim-lsp"
 	use "hrsh7th/cmp-nvim-lua"
 
@@ -69,10 +70,20 @@ use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/mason.nvim" -- simple to use language server installer
   use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
   use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
+use "tamago324/nlsp-settings.nvim" -- language server settings defined in json
 
 	-- Telescope
 	use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-media-files.nvim"
+
+-- Treesitter
+     use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    } 
+
+--Autopairs
+use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
