@@ -85,6 +85,10 @@ use "tamago324/nlsp-settings.nvim" -- language server settings defined in json
 --Autopairs
 use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
 
+--comments plugin
+use "numToStr/Comment.nvim" -- Easily comment stuff
+use 'JoosepAlviste/nvim-ts-context-commentstring'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
