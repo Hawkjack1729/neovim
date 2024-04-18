@@ -100,6 +100,9 @@ use 'kyazdani42/nvim-web-devicons'
 use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
   use "moll/vim-bbye"
 
+--lualine
+use 'nvim-lualine/lualine.nvim'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
