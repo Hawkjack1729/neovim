@@ -1,4 +1,4 @@
-local status_ok, indent_blankline = pcall(require, "indent_blankline")
+local status_ok, indent_blankline = pcall(require, "ibl")
 if not status_ok then
 	return
 end
@@ -24,7 +24,7 @@ vim.g.indent_blankline_show_current_context = true
 vim.g.indent_blankline_context_patterns = {
 	"class",
 	"return",
-	"function",
+    	"function",
 	"method",
 	"^if",
 	"^while",

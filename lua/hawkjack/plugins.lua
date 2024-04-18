@@ -113,7 +113,7 @@ use "ahmedkhalf/project.nvim"
 use 'lewis6991/impatient.nvim'
 
 --indentline
-use "lukas-reineke/indent-blankline.nvim"
+use({ "lukas-reineke/indent-blankline.nvim", module = "ibl" })
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
