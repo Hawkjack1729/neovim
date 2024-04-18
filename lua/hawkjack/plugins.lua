@@ -112,6 +112,9 @@ use "ahmedkhalf/project.nvim"
 --impatient
 use 'lewis6991/impatient.nvim'
 
+--indentline
+use "lukas-reineke/indent-blankline.nvim"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
