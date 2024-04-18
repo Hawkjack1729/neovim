@@ -106,6 +106,9 @@ use 'nvim-lualine/lualine.nvim'
 --toggleterm
   use "akinsho/toggleterm.nvim"
 
+--project plugin
+use "ahmedkhalf/project.nvim"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
