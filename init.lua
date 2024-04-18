@@ -10,3 +10,4 @@ require "hawkjack.comments"
 require "hawkjack.gitsigns"
 require "hawkjack.nvim-tree"
 require "hawkjack.bufferline"
+require("hawkjack.lualine")
