@@ -219,6 +219,11 @@ _G.packer_plugins = {
     path = "/home/hawkjack/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
+  ["project.nvim"] = {
+    loaded = true,
+    path = "/home/hawkjack/.local/share/nvim/site/pack/packer/start/project.nvim",
+    url = "https://github.com/ahmedkhalf/project.nvim"
+  },
   sonokai = {
     loaded = true,
     path = "/home/hawkjack/.local/share/nvim/site/pack/packer/start/sonokai",
