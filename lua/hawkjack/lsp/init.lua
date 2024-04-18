@@ -6,3 +6,4 @@ end
 require "hawkjack.lsp.mason"
 require("hawkjack.lsp.handlers").setup()
 require "hawkjack.lsp.null-ls"
+require "hawkjack.lsp.null-ls"
