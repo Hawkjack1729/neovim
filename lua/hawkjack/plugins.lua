@@ -71,6 +71,8 @@ use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
   use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
 use "tamago324/nlsp-settings.nvim" -- language server settings defined in json
+  use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
+
 
 	-- Telescope
 	use "nvim-telescope/telescope.nvim"
@@ -114,6 +116,9 @@ use 'lewis6991/impatient.nvim'
 
 --indentline
 use "lukas-reineke/indent-blankline.nvim"
+
+--alpha
+use 'goolord/alpha-nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
