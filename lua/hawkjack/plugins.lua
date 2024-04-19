@@ -41,7 +41,10 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   -- My plugins here
+  -- packer
   use "wbthomason/packer.nvim" -- Have packer manage itself
+
+--popup
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
@@ -90,9 +93,11 @@ use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitte
 --comments plugin
 use "numToStr/Comment.nvim" -- Easily comment stuff
 use 'JoosepAlviste/nvim-ts-context-commentstring'
+use "https://github.com/tpope/vim-commentary"
 
 -- Git
   use "lewis6991/gitsigns.nvim"
+  use "tpope/vim-fugitive"
 
 --NvimTree
 use 'kyazdani42/nvim-web-devicons'
@@ -115,7 +120,7 @@ use "ahmedkhalf/project.nvim"
 use 'lewis6991/impatient.nvim'
 
 --indentline
-use "lukas-reineke/indent-blankline.nvim"
+use({ "lukas-reineke/indent-blankline.nvim", module = "ibl" })
 
 --alpha
 use 'goolord/alpha-nvim'
@@ -123,7 +128,26 @@ use 'goolord/alpha-nvim'
 --whichkey
 use "folke/which-key.nvim"
 
+--tagbar
+use "preservim/tagbar"
 
+--fuzzy finder
+  use "junegunn/fzf.vim"
+
+--some mislenious plugins
+use {
+    'w0rp/ale',
+    ft = {'sh', 'zsh', 'bash', 'c', 'cpp', 'cmake', 'html', 'markdown', 'racket', 'vim', 'tex'},
+    cmd = 'ALEEnable',
+    config = 'vim.cmd[[ALEEnable]]'
+}
+  use {'iamcco/markdown-preview.nvim', run = 'cd app && npm install', cmd = 'MarkdownPreview'}
+  use {'tpope/vim-dispatch', opt = true, cmd = {'Dispatch', 'Make', 'Focus', 'Start'}}
+  use "rstacruz/vim-closer"
+  use "vim-airline/vim-airline"
+
+  --code runner
+  use { 'CRAG666/code_runner.nvim', requires = 'nvim-lua/plenary.nvim' }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

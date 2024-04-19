@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 -- local status_ok, indent_blankline = require "ibl"
 -- if not status_ok then
 -- 	return
 -- end
+=======
+local status_ok, indent_blankline = pcall(require, "ibl")
+if not status_ok then
+	return
+end
+>>>>>>> 19-indentline
 
 vim.g.indent_blankline_buftype_exclude = { "terminal", "nofile" }
 vim.g.indent_blankline_filetype_exclude = {
@@ -24,7 +31,7 @@ vim.g.indent_blankline_show_current_context = true
 vim.g.indent_blankline_context_patterns = {
 	"class",
 	"return",
-	"function",
+    	"function",
 	"method",
 	"^if",
 	"^while",
