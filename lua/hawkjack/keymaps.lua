@@ -104,6 +104,15 @@ keymap("n", "<leader>a", "ggVG", opts)
 -- Emmet-vim key mapping
 keymap('i', '<C-y>', '<Plug>(emmet-expand-abbr)', { noremap = true, silent = true })
 
+local opts = {
+  mode = "n", -- NORMAL mode
+  prefix = "<leader>",
+  buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
+  silent = true, -- use `silent` when creating keymaps
+  noremap = true, -- use `noremap` when creating keymaps
+  nowait = true, -- use `nowait` when creating keymaps
+}
+
 local mappings = {
   ["A"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["H"] = { "<cmd>split<cr>", "Split window Horizontally" },
@@ -112,7 +121,7 @@ local mappings = {
   ["<space>o"] = { "<cmd>lua require('telescope.builtin').lsp_definitions(require('telescope.themes').get_dropdown{previewer = false})<cr>", "OPEN" },
   ["r"] = { "<cmd>lua require('telescope.builtin').oldfiles(require('telescope.themes').get_dropdown{previewer = false})<cr>", "RECENT FILES" },
   ["b"] = { "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>", "Buffers" },
-  ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
+  ["e"] = { "<cmd>NvimTreeToggle 20<cr>", "Explorer" },
   ["w"] = { "<cmd>w!<CR>", "Save" },
   ["q"] = { "<cmd>q!<CR>", "Quit" },
   ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
